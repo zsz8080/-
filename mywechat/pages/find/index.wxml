@@ -1,0 +1,4 @@
+<!--pages/find/index.wxml-->
+<view>
+  <text bindtap='click'>朋友圈</text>
+</view>

@@ -1,0 +1,8 @@
+<view class="wrap">
+    <text class="title">{{title}}</text>
+    <view class="list">
+        <block wx:for="{{list}}" wx:key='item.cityId'>
+            <text bindtap='city'>{{item.cityName}}</text>
+        </block>
+    </view>
+</view>

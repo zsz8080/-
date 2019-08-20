@@ -1,0 +1,13 @@
+dl{
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+dd{
+  display: flex;
+  flex-direction: column;
+}
+image{
+  width:100rpx;
+  height: 100rpx;
+}

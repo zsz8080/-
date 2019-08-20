@@ -1,0 +1,22 @@
+<template name='list'>
+    <view class="dl">
+        <image class="" src="{{url}}"></image>
+        <text>{{name}}</text>
+        <view class="reduce">
+            <text class="btn minus" bindtap='minus' data-id='{{id}}'>-</text>
+            <text>{{num}}</text>
+            <text class="btn add" bindtap='add' data-id='{{id}}'>+</text>
+        </view>
+    </view>
+</template>
+<view class="wrap">
+    <scroll-view scroll-y="{{true}}" class="list">
+      <block wx:for="{{list}}" wx:key='index'>
+          <template is='list' data="{{...item}}"></template>
+      </block>
+    </scroll-view>
+    <view class="bot">
+        <text>当先人数为{{sum}}人</text>
+        <button>创建房间</button>
+    </view>
+</view>

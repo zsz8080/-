@@ -1,0 +1,29 @@
+<!--pages/child/child.wxml-->
+<view>
+  <view wx:for='{{lists}}' wx:key='{{index}}' 
+  bindtap='click' data-name='{{item}}'>
+    <text>{{item.name}}----{{index}}</text>
+    <button>按钮</button>
+  </view>
+  <text>{{name}}</text>
+  <view wx:if="{{flag}}">
+    <text class="" selectable="false" space="false" decode="false">
+      123233123
+    </text>
+  </view>
+  <swiper indicator-dots='{{true}}' autoplay='{{true}}' interval='{{2000}}' duration='{{1000}}'>
+    <block wx:for='{{data}}' wx:key='{{index}}'>
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+  <input placeholder='请输入'
+  value='{{title}}'
+   bindinput='input'></input>
+  <textarea>
+  </textarea>
+</view>
+<!--  -->

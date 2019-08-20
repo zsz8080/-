@@ -1,0 +1,5 @@
+<view>
+  <input placeholder='hahahah' bindinput='input'></input>
+  <button bindtap='click' data-val="{{value}}">确定</button>
+  <text>{{value}}</text>
+</view>

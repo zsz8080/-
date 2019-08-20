@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/index",
+    "pages/peopel/index",
+    "pages/find/index",
+    "pages/my/index",
+    "pages/self/index",
+    "pages/friend/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "微信",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"images/微信.png",
+        "selectedIconPath":"images/微信1.png",
+        "text":"微信"
+      },
+      {
+        "pagePath": "pages/peopel/index",
+        "text": "通讯录",
+        "iconPath": "images/通讯录.png",
+        "selectedIconPath": "images/通讯录1.png"
+      },
+      {
+        "pagePath": "pages/find/index",
+        "text": "发现",
+        "iconPath": "images/发现.png",
+        "selectedIconPath": "images/发现1.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我",
+        "iconPath": "images/我.png",
+        "selectedIconPath": "images/我1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

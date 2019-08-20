@@ -1,0 +1,17 @@
+<view class="wrap">
+    <view class="left">
+        <block wx:for='{{list}}' wx:key='{{index}}'>
+            <text bindtap='click' 
+            data-id='{{index}}'>{{item.title}}</text>
+        </block>
+    </view>
+    <scroll-view class="right" scroll-y='{{true}}'>
+        <block wx:for='{{content}}' 
+        wx:key='{{index}}'>
+           <view class="dl">
+                <image src='{{item.url}}'></image>
+                <text>{{item.name}}</text>
+           </view>
+        </block>
+    </scroll-view>
+</view>

@@ -1,0 +1,5 @@
+<view class="wrap">
+    <block wx:for="{{tablist}}" wx:key='index'>
+        <tab prop-tab='{{item}}' />
+    </block>
+</view>

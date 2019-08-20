@@ -1,0 +1,9 @@
+<view class='wrap'>
+    <block wx:for='{{dllist}}'
+    wx:key='{{index}}'>
+        <view class="dl" bindtap='click' data-type='{{item.type}}'>
+            <image src='{{item.src}}'></image>
+            <text>{{item.text}}</text>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,10 @@
+/* pages/find/index.wxss */
+view{
+  width:100%;
+  display: flex;
+}
+text{
+  width:100%;
+  padding: 30rpx;
+  border:1rpx solid #ccc
+}

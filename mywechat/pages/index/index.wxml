@@ -1,0 +1,17 @@
+<view>
+    <view  class="list" wx:for="{{list}}" 
+    wx:key='{{index}}' 
+    bindtap='click' data-data='{{item}}'>
+      <block>
+        <dl>
+          <dt>
+              <image src='{{item.src}}'></image>
+          </dt>
+          <dd>
+            <text>{{item.name}}</text>
+            <text>啊哈哈哈</text>
+          </dd>
+        </dl>
+      </block>
+    </view>
+</view>

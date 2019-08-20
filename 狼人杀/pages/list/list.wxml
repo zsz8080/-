@@ -1,0 +1,12 @@
+<button bindtap='click'>请求</button>
+<view class="wrap">
+    <block wx:for='{{list}}' wx:key='index'>
+        <view class="dl">
+            <image src='{{item.pic}}'></image>
+            <view>
+              <text class="title">{{item.name}}</text>
+              <text class="intro">{{item.intro}}</text>
+            </view>
+        </view>
+    </block>
+</view>
